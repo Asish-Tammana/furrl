@@ -5,13 +5,14 @@
 }
 
 .cart-items-container{
-    width: 70%;
+    width: 100%;
     padding-top: 30px;
 }
 
 .coupon-container{
     text-align: center;
     color: gray;
+    margin-top: 5px;
 }
 
 .final-bill-container{

@@ -28,24 +28,27 @@ const Cart = () => {
                             </div>
 
                             <table className='final-bill-container'>
-                                <tr>
-                                    <td>Total MRP</td>
-                                    <td className='values-cell'>Rs. {totalMrp}</td>
-                                </tr>
-                                <tr> </tr>
-                                <tr className='blue'>
-                                    <td>Discount on MRP</td>
-                                    <td className='values-cell'>Rs. {totalDiscount}</td>
-                                </tr>
-                                <tr className='blue'>
-                                    <td>Delivery</td>
-                                    <td className='values-cell'>FREE</td>
-                                </tr>
-                                <tr> </tr>
-                                <tr>
-                                    <td>Total Amount</td>
-                                    <td className='values-cell'>Rs. {totalMrp - totalDiscount}</td>
-                                </tr>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Total MRP</td>
+                                        <td className='values-cell'>Rs. {totalMrp}</td>
+                                    </tr>
+                                    
+                                    <tr className='blue'>
+                                        <td>Discount on MRP</td>
+                                        <td className='values-cell'>Rs. {totalDiscount}</td>
+                                    </tr>
+                                    <tr className='blue'>
+                                        <td>Delivery</td>
+                                        <td className='values-cell'>FREE</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Total Amount</td>
+                                        <td className='values-cell'>Rs. {totalMrp - totalDiscount}</td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <div className='checkout-container'>
                                 <button className='checkout-button login'>CHECKOUT</button>
