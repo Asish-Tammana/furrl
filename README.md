@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Furrl Frontend Assignment by Asish Tammana
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Page Features Details
 
-## Available Scripts
+The page layout includes the following features:
 
-In the project directory, you can run:
+### 1. Top Nav:
+- Wishlist button redirects to [Furrl Wishlist](https://furrl.in/wishlist).
+- Cart Button redirects to Furrl Cart.
 
-### `npm start`
+### 2. Product List:
+- Infinite scroll feature for dynamic loading of products.
+- Clicking on a product redirects to its corresponding product details page.
+- Share button opens a generic share component containing the link to the product detail page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Additional Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Redux Implementation:
+- Implemented Redux for state management.
 
-### `npm test`
+### 2. Cart Functionality:
+- Added cart functionality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Detailed Product Page:
+- Preview of more details of a product
 
-### `npm run build`
+### Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to run the project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Asish-Tammana/furrl.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to Project Directory:**
+   ```bash
+   cd furrl
+   ```
 
-### `npm run eject`
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the Development Server:**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The application will be accessible at `http://localhost:3000` in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **src/components:** Contains React components for different sections of the application.
+- **src/actions:** Redux - Holds the action functions for global state management.
+- **src/reducers:** Redux - Holds the reducers for global state management.
+- **src/App.js:** Defines the application's routes using React Router.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React.js:** A JavaScript library for building user interfaces.
+- **React Router:** A declarative routing solution for React applications.
+- **Redux:** A state management in React.
+- **JavaScript:** The primary programming language used for the project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
+- **Developer:** Asish Tammana
+- **Contact:** tammanaasish@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, or distribute it according to the terms of the license.
