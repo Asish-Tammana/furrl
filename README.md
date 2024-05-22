@@ -18,10 +18,13 @@ The page layout includes the following features:
 ### 1. Redux Implementation:
 - Implemented Redux for state management.
 
-### 2. Cart Functionality:
+### 2. Responsive Website:
+- Felxible to use in any device.
+
+### 3. Cart Functionality:
 - Added cart functionality.
 
-### 3. Detailed Product Page:
+### 4. Detailed Product Page:
 - Preview of more details of a product
 
 ### Getting Started
