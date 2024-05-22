@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom"; // Import useLocation hook from react-router-dom
+import { useLocation, useNavigate } from "react-router-dom"; // Import useLocation hook from react-router-dom
 import { FaStar } from "react-icons/fa"; // Import star icon
 import Loader from "../Loader"; // Import Loader component
 import ProductImages from "../Carousel"; // Import ProductImages component
@@ -19,9 +19,11 @@ const ProductDetailedPage = () => {
     const brandName = brand[0].name;
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const handleAddToCart = () => {
         dispatch(addToCart(ProductDetails))
+        navigate("/cart")
     }
 
     return (
