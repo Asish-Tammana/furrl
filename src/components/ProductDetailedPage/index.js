@@ -7,6 +7,8 @@ import ProductDelivery from "../ProductDelivery"; // Import ProductDelivery comp
 import ProductDefect from "../ProductDefect"; // Import ProductDefect component
 import AppsSection from "../AppsSection"; // Import AppsSection component
 import Footer from "../Footer"; // Import Footer component
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../actions/cartActions";
 import './index.css'; // Import CSS file for styling
 
 const ProductDetailedPage = () => {
@@ -15,6 +17,12 @@ const ProductDetailedPage = () => {
 
     const { title, brand, MRP, price, discountPercent } = ProductDetails;
     const brandName = brand[0].name;
+
+    const dispatch = useDispatch()
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(ProductDetails))
+    }
 
     return (
         <>
@@ -38,7 +46,7 @@ const ProductDetailedPage = () => {
                             </p>
                             <p style={{ color: '#7c5be7' }}>Size Chart</p>
                         </div>
-                        <button className="big-screen-button add-to-bag-button">Add to Bag</button>
+                        <button onClick={handleAddToCart} className="big-screen-button add-to-bag-button">Add to Bag</button>
                         <hr className="line-break" />
                         <img className="coupon-image" src="https://web.furrl.in/_next/static/media/first-coupon.ba35be4f.png" alt="coupon" />
                         <hr className="line-break" />
@@ -54,7 +62,7 @@ const ProductDetailedPage = () => {
                     </div>
                     <div className="add-to-bag">
                         <img src="https://cdn.furrl.in/vibes/AboveATCbanner-2.png" alt="vibes" style={{ width: '100%' }} />
-                        <button className="add-to-bag-button">Add to Bag</button>
+                        <button onClick={handleAddToCart} className="add-to-bag-button">Add to Bag</button>
                     </div>
 
                 </div>

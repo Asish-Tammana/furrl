@@ -6,6 +6,7 @@ import './index.css'; // Import CSS file for styling
 const ProductCard = (props) => {
   // Destructure productDetails and additionalStyles from props
   const { productDetails, additionalStyles } = props;
+
   
   // Determine styles for share container
   const shareSpecificContainer = additionalStyles !== null ? { paddingBottom: '40%' } : null;
