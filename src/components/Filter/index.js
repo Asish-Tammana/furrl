@@ -1,11 +1,12 @@
-import './index.css'
+import './index.css'; 
 
+// Functional component for a filter button
 const Filter = (props) => {
-    const {filterDetails} = props
-    const {name} = filterDetails
+    const {filterDetails : {name}} = props; // Destructure filterDetails from props
+
     return(
-        <button type="button" className='filter-button'>{name}</button>
-    )
+        <button type="button" className='filter-button'>{name}</button> // Button with filter name
+    );
 }
 
-export default Filter
+export default Filter; // Export the Filter component

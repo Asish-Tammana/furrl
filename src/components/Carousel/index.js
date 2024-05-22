@@ -1,9 +1,11 @@
 import Slider from "react-slick";
 
+// Import CSS files for the slider and additional styling
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './index.css'
+import './index.css';
 
+// Configuration for the slider settings
 var settings = {
     dots: true,
     infinite: true,
@@ -13,17 +15,24 @@ var settings = {
     arrows: true,
 };
 
+// Functional component to display product images in a slider
 const ProductImages = (props) => {
-
-    const { ImagesList } = props
-
+    const { ImagesList } = props; // Destructure ImagesList from props
 
     return (
+        // Render the slider with defined settings
         <Slider {...settings} className="slider-container">
-            {ImagesList.map(eachImage => <img key={eachImage.id} src={eachImage.src} style={{height: eachImage.height, width: eachImage.width}}  />)}
+            {/* Map through ImagesList to render each image */}
+            {ImagesList.map(eachImage => (
+                <img 
+                    key={eachImage.id} 
+                    src={eachImage.src} 
+                    style={{height: eachImage.height, width: eachImage.width}} 
+                    alt='Product'
+                />
+            ))}
         </Slider>
-
-    )
+    );
 }
 
-export default ProductImages
+export default ProductImages;
